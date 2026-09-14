@@ -1,0 +1,26 @@
+[project]
+name = "customer-churn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sumant1708", email = "sumantdas170803@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "joblib==1.5.2",
+    "matplotlib==3.10.8",
+    "numpy==2.5.2",
+    "pandas==2.3.3",
+    "scikit-learn==1.9.0",
+    "seaborn==0.13.2",
+    "streamlit==1.51.0",
+    "xgboost==3.2.0",
+]
+
+[project.scripts]
+customer-churn = "customer_churn:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
